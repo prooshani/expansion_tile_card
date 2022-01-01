@@ -341,7 +341,7 @@ class ExpansionTileCardState extends State<ExpansionTileCard> with SingleTickerP
     return AnimatedBuilder(
       animation: _controller.view,
       builder: _buildChildren,
-      child: closed ? null : Column(mainAxisAlignment: MainAxisAlignment.end, children: widget.children),
+      child: closed ? null : Column(mainAxisAlignment: MainAxisAlignment.center, children: widget.children),
     );
   }
 }
